@@ -1,0 +1,11 @@
+Error Lens
+ESLint
+Icons
+indent-rainbow
+npm Intellisense
+Prettier - Code formatter
+REST Client
+SQLite Viewer
+Trae Theme
+vscode-dbml
+PlantUML Previewer

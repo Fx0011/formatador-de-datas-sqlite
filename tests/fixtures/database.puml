@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+actor "Usuário (Professor)" as User
+
+package "Sistema SAEP" {
+  usecase "Fazer Login" as UC1
+  usecase "Cadastrar Usuário" as UC2
+  usecase "Cadastrar Pai (Turma)" as UC3
+  usecase "Listar/Excluir Pai" as UC4
+  usecase "Cadastrar Filho (Atividade)" as UC5
+  usecase "Listar/Excluir Filho" as UC6
+  usecase "Sair (Logout)" as UC7
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+User --> UC7
+@enduml

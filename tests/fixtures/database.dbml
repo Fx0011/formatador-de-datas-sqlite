@@ -1,0 +1,37 @@
+// =======================================================
+// COLE ISTO NO DBDIAGRAM.IO 
+// =======================================================
+
+// 1. Tabela de Usuários
+Table users {
+  id integer [primary key, increment]
+  name text [not null]
+  email text [unique, not null]
+  password text [not null]
+}
+
+// 2. Tabela PAI (Mude o nome 'parent' se precisar)
+// Ex: Turmas, Caixas, Prateleiras
+Table parent {
+  id integer [primary key, increment]
+  name text [not null]
+  user_id integer [not null]
+}
+
+// 3. Tabela FILHO (Mude o nome 'child' se precisar)
+// Ex: Atividades, Ferramentas, Produtos
+Table child {
+  id integer [primary key, increment]
+  description text [not null] 
+  parent_id integer [not null]
+}
+
+// =======================================================
+// RELACIONAMENTOS (As linhas que conectam as caixas)
+// =======================================================
+
+// Um usuário tem vários Pais (1:N)
+Ref: parent.user_id > users.id  
+
+// Um Pai tem vários Filhos (1:N)
+Ref: child.parent_id > parent.id

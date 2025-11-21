@@ -1,0 +1,1 @@
+Abrir https://draw.io/ -> Arrange -> Insert -> Avançado

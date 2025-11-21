@@ -1,0 +1,18 @@
+LISTA DE REQUISITOS DE INFRAESTRUTURA
+
+1. SGBD (Sistema Gerenciador de Banco de Dados):
+   - SQLite 3 (Versão inclusa na biblioteca 'sqlite3' do NPM).
+
+2. Servidor de Aplicação / Runtime:
+   - Node.js (Versão v18.x ou superior - verificar no PC da prova com 'node -v').
+   - Framework: Express.js v5.1.0 
+
+3. Linguagem e Tecnologias:
+   - Backend: JavaScript (Node.js).
+   - Frontend: HTML5, CSS3, Vanilla JavaScript.
+   - Comunicação: API REST com formato JSON.
+
+4. Dependências do Projeto (package.json):
+   - express
+   - sqlite3
+   - cors

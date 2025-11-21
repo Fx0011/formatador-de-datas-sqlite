@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detalhes</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <!-- Botão Voltar -->
+                <button onclick="window.location.href='dashboard.html'" class="btn btn-secondary">Voltar</button>
+                <h3 id="pageTitle">Detalhes</h3>
+                <button onclick="logout()" class="btn btn-secondary">Sair</button>
+            </header>
+
+            <!-- Formulário de Cadastro do FILHO -->
+            <div class="card">
+                <!-- MUDAR: Placeholder (Descrição da Atividade / Nome da Ferramenta) -->
+                <input
+                    type="text"
+                    id="childName"
+                    placeholder="Descrição da Atividade (ou Ferramenta)"
+                    style="width: 70%"
+                />
+                <button onclick="createChild()" class="btn btn-primary">Cadastrar</button>
+            </div>
+
+            <!-- Lista de Itens -->
+            <div id="childList">
+                <!-- O JS vai preencher isso aqui -->
+            </div>
+        </div>
+        <script src="utils.js"></script>
+        <script src="details.js"></script>
+    </body>
+</html>

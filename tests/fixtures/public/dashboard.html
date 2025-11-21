@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <!-- MUDAR: Título Geral -->
+                <h3>Sistema de Avaliação</h3>
+                <div>
+                    <span id="userName">Usuário</span>
+                    <button onclick="logout()" class="btn btn-secondary">Sair</button>
+                </div>
+            </header>
+
+            <!-- Formulário de Cadastro do PAI -->
+            <div class="card">
+                <!-- MUDAR: Placeholder (Nome da Turma / Nome da Caixa) -->
+                <input type="text" id="parentName" placeholder="Nome da Turma (ou Caixa)" style="width: 70%" />
+                <button onclick="createParent()" class="btn btn-primary">Cadastrar</button>
+            </div>
+
+            <!-- Lista de Itens -->
+            <div id="parentList">
+                <!-- O JS vai preencher isso aqui -->
+            </div>
+        </div>
+        <script src="utils.js"></script>
+        <script src="dashboard.js"></script>
+    </body>
+</html>
